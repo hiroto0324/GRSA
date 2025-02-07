@@ -6,7 +6,7 @@ under review
 ## Architecture
 <img src="figures/schematic_RC_vs_GRSA.svg" width="800">
 
-## Demonstration of Online Time Series Classification
+## Demonstration of Online Time Series Classification (Regression vs. GRSA)
 
 |![image](figures/case_study_Epilepsy_task120.svg) |   ![image](figures/case_study_CharacterTrajectories_task65.svg)|
 |:--:|:--:
@@ -29,13 +29,6 @@ under review
 pip install -r requirements.txt
 ```
 
-## Data Preparation
-
-1. Download time-series anomaly detection benchmark datasets following (https://github.com/elisejiuqizhang/TS-AD-Datasets).
-
-2. Organize data:
-Place datasets in `benchmarks/{dataset_name}/data`.
-
 ## Running the Code
 
 Run the main script with your chosen options:
@@ -50,8 +43,8 @@ python main.py --benchmark UCR --method MDRS
 
 ## Results
 
-- Results are saved in `results` and `plots` directories within each benchmark folder.
-- Runtime analysis is stored in `analysis` directory within each benchmark folder.
+- Results are saved in `results` directory within each benchmark folder.
+- Performance analysis is stored in `analysis` directory within each benchmark folder.
 
 
 # Details (Under Review)
@@ -66,6 +59,13 @@ python main.py --benchmark UCR --method MDRS
 
 ## Overall Results
 
+<img src="figures/accuracy_bar_UEA_tauL0.1_all.svg" width="800">
 
+<img src="figures/critical_difference_diagram_tauL0.1_all.svg" width="800">
+
+
+## Potential for Early Classification
+
+<img src="figures/UEA_different-test-length.svg" width="800">
 
 
