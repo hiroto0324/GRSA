@@ -1,7 +1,7 @@
-# Online classification of multivariate time series data through Gaussian Reservoir State Analysis (GRSA)
+# Gaussian Reservoir State Analysis (GRSA)
 
 ## Paper
-under review
+Under review
 
 ## Architecture
 <img src="figures/schematic_RC_vs_GRSA.svg" width="800">
@@ -31,28 +31,17 @@ pip install -r requirements.txt
 
 ## Running the Code
 
-Run the main script with your chosen options:
+Run the main script:
 
 ```bash
-python main.py --benchmark UCR --method MDRS
+python main.py
 ```
 
-- Supported benchmarks: `UCR, SMD, SMAP, MSL, PSM, SWaT`
-
-- Methods: `SPE, TRAKR, MDRS, MDSW_fixed, MDSW_adjusted`
 
 ## Results
 
-- Results are saved in `results` directory within each benchmark folder.
 - Performance analysis is stored in `analysis` directory within each benchmark folder.
-
-
-# Details (Under Review)
-
-
-## Gaussian Reservoir State Analysis (GRSA)
-
-
+- Model outputs for Regression or GRSA are saved in `results` directory within each benchmark folder.
 
 
 # Main Results
